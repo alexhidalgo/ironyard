@@ -32,7 +32,7 @@ body {
 
 .content {
   color: black; }
-  .content .icon-box:first-child {
+  .content div:first-child {
     background-color: #03354e; }
   .content .icon-box {
     height: 3em;
