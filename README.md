@@ -53,3 +53,5 @@ checkbox is opacity 0 with height and width sitting onto of hamburger
 div.banner find all the div class=“banner”
 div .banner find all the .banner children of div
 
+
+Alex, accept these changes or I will end you.
