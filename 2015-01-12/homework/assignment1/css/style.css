@@ -11,16 +11,17 @@ body {
       color: #03354e;
       padding: 0 0.4em; }
   .banner .wave {
-    background-image: url(http://placekitten.com/g/35/35);
-    height: 2.34em;
-    width: 2.34em;
+    background-image: url(http://placekitten.com/g/40/40);
+    height: 2.6em;
+    width: 2.6em;
     -webkit-border-radius: 100px;
     -moz-border-radius: 100px;
     -ms-border-radius: 100px;
     border-radius: 100px;
     margin: 2em 0; }
   .banner .hero {
-    color: #03354e; }
+    color: white;
+    font-size: 2em; }
   .banner .subheader {
     color: #03354e; }
 
