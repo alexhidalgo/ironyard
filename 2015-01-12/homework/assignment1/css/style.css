@@ -9,21 +9,26 @@ body {
     .banner .navbar a {
       text-decoration: none;
       color: #03354e;
-      padding: 0 0.4em; }
+      padding: 0 0.4em;
+      font-weight: 900;
+      font-size: 1.1em; }
   .banner .wave {
-    background-image: url(http://placekitten.com/g/40/40);
-    height: 2.6em;
-    width: 2.6em;
+    background-image: url(http://placekitten.com/g/50/50);
+    height: 3.25em;
+    width: 3.25em;
     -webkit-border-radius: 100px;
     -moz-border-radius: 100px;
     -ms-border-radius: 100px;
     border-radius: 100px;
-    margin: 2em 0; }
+    margin: 1.8em 0 1em 0; }
   .banner .hero {
     color: white;
-    font-size: 2em; }
+    font-size: 2em;
+    margin-bottom: 0.25em;
+    letter-spacing: 0.125em; }
   .banner .subheader {
-    color: #03354e; }
+    color: #03354e;
+    padding-bottom: 2em; }
 
 .content {
   color: black; }
