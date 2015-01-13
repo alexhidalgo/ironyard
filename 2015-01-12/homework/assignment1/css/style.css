@@ -32,6 +32,15 @@ body {
 
 .content {
   color: black; }
+  .content .icon-box:first-child {
+    background-color: #03354e; }
+  .content .icon-box {
+    height: 3em;
+    width: 3.5em;
+    background-color: grey;
+    text-align: center;
+    display: inline-block;
+    line-height: 3em; }
 
 .footer {
   background-color: #033550;
