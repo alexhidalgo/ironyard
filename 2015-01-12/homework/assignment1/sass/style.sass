@@ -1,16 +1,54 @@
+// Import
+@import color
+// Mixins
+=border-radius($radius)
+	-webkit-border-radius: $radius
+	-moz-border-radius: $radius
+	-ms-border-radius: $radius
+	border-radius: $radius
+
 // Mobile Default Styling
+
+body
+	margin: 0
+
 .banner
-	background-color: 0c78b5
+	background-color: $background-color
+	text-align: center
+
+	.navbar
+		padding-top: .7em
+
+		a
+			text-decoration: none
+			color: $text-color
+			padding: 0 0.4em
+
+	.wave
+		background-image: url(http://placekitten.com/g/35/35)
+		height: 2.34em
+		width: 2.34em
+		+border-radius(100px)
+		margin: 2em 0
+
+	.hero
+		color: $text-color
+
+	.subheader
+		color: $text-color
 
 .content
 	color: black
 
 .footer
-	background-color: #033550
-	color: #a2b3be
+	background-color: $footer-background-color
+	color: $footer-text-color
 	width: 100%
 	text-align: center
 	padding: 5em 0
+
+	.footer-box
+		padding: 0
 
 	.footer-items
 		display: inline-block
