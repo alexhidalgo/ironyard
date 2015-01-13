@@ -1,5 +1,6 @@
 // Import
 @import color
+
 // Mixins
 =border-radius($radius)
 	-webkit-border-radius: $radius
@@ -11,6 +12,12 @@
 
 body
 	margin: 0
+
+.full-line
+	border-top: grey solid 0.1em
+	margin-top: 5em
+	margin-bottom: 2em
+	width: 100%
 
 .banner
 	background-color: $background-color
@@ -45,9 +52,33 @@ body
 
 .content
 	color: black
+	padding: 0 1.4em
 
-	div:first-child
-		background-color: $text-color
+	.content-header
+		color: $text-color
+		font-size: 4em
+		line-height: 1.1em
+		font-family: Oswald
+
+	.text-content
+		color: $text-content-color
+
+		span
+			text-decoration: underline
+
+	.left-pipe
+		border-left: 0.15em grey solid
+		padding: 1em 0 1em 1em
+		margin: 2em 0
+
+	.content-subheader
+		font-size: 1.4em
+		color: $content-subheader-color
+		font-family: Asap
+		line-height: 1.2em
+
+	.date-text
+		color: $date-text-color
 
 	.icon-box
 		height: 3em
@@ -56,6 +87,78 @@ body
 		text-align: center
 		display: inline-block
 		line-height: 3em
+		margin-top: 1em
+		margin-bottom: 3em
+
+	.icon-box-1
+		height: 3em
+		width: 3.5em
+		background-color: $text-color
+		text-align: center
+		display: inline-block
+		line-height: 3em
+		margin-top: 1em
+		margin-bottom: 3em
+
+	.profile-image-box
+		text-align: center
+
+
+		.profile-name
+			color: $background-color
+			font-size: 1.1em
+
+		.profile-image
+			background-image: url(http://placekitten.com/g/85/85)
+			height: 85px
+			width: 85px
+			+border-radius(100px)
+			margin-bottom: 1em
+
+	.social-link
+		display: inline-block
+		color: grey
+		margin: 1.2em 1.1em
+
+	.ad-container
+		text-align: center
+
+		.ad-image
+			background-image: url(http://placekitten.com/g/278/228)
+			height: 228px
+			width: 278px
+
+		.ad-link
+			color: $date-text-color
+			display: inline-block
+			float: right
+			margin-right: 2.1em
+			margin-top: 0.5em
+
+	.popular-posts
+		text-align: center
+		margin-top: 5em
+		margin-bottom: 5em
+
+
+		.content-header
+			font-size: 2em
+
+		.post-image
+			background-image: url(http://placekitten.com/g/280/200)
+			height: 200px
+			width: 280px
+			margin: 1em 0
+
+		.hero
+			position: relative
+			bottom: 3.2em
+			right: 1.5em
+			color: white
+			display: inline-block
+			text-align: left
+			font-family: Asap
+			font-size: 1.4em
 
 
 .footer

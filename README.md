@@ -5,7 +5,11 @@ Complete IronYard directory
 IronYard Quick Notes
 
 2015-01-13
-	git reset --hard Origin/Master
+'==' means check equality with type coercion 
+'===' means check equality exactly no type coercion
+
+git reset --hard Origin/Master
+Casting = changing one variable type to another
 
 Absolute PATH - path starting with http(s) 
 site-route relative - standard file linking i.e.. href="css/style.css” it starts with a “/
@@ -53,5 +57,3 @@ checkbox is opacity 0 with height and width sitting onto of hamburger
 div.banner find all the div class=“banner”
 div .banner find all the .banner children of div
 
-
-Alex, accept these changes or I will end you.
