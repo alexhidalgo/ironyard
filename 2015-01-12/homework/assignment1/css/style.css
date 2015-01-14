@@ -151,9 +151,13 @@ body {
     width: 50%;
     padding: 0 4em;
     display: inline-block; }
-    .content .popular-posts div {
-      display: inline-block;
-      width: 10%; }
+    .content .profile {
+      display: none; }
+    .content .full-line {
+      display: none; }
+
+  .popular-posts {
+    display: none; }
 
   .banner .desktop-banner {
     display: inline-block;
@@ -228,6 +232,9 @@ body {
       .side-content .side-text-container p {
         line-height: 1.5em;
         font-size: 0.9em;
-        color: #bdc0c3; } }
+        color: #bdc0c3; }
+
+  .desktop-popular .desktop-container + .content-header {
+    text-align: center; } }
 
 /*# sourceMappingURL=style.css.map */
