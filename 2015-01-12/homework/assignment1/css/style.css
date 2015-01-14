@@ -147,6 +147,17 @@ body {
     margin-bottom: 1em; }
 
 @media (min-width: 768px) {
+  .content {
+    width: 45%;
+    padding: 0 4em;
+    display: inline-block; }
+
+  .side-content {
+    width: 30%;
+    background-color: blue;
+    display: inline-block;
+    height: 1000px; }
+
   .banner .desktop-banner {
     display: inline-block;
     width: 40%;
@@ -172,6 +183,8 @@ body {
   .banner .subheader {
     padding-bottom: 10em; }
   .banner .wave {
-    display: none; } }
+    display: none; }
+  .banner .content-header {
+    font-size: 3em; } }
 
 /*# sourceMappingURL=style.css.map */
