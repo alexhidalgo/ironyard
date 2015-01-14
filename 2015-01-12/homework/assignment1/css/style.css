@@ -151,6 +151,9 @@ body {
     width: 50%;
     padding: 0 4em;
     display: inline-block; }
+    .content .popular-posts div {
+      display: inline-block;
+      width: 10%; }
 
   .banner .desktop-banner {
     display: inline-block;
@@ -187,6 +190,44 @@ body {
     display: inline-block;
     height: 1000px;
     position: relative;
-    vertical-align: top; } }
+    vertical-align: top;
+    text-align: center; }
+    .side-content .profile-image {
+      background-image: url(http://placekitten.com/g/85/85);
+      height: 85px;
+      width: 85px;
+      -webkit-border-radius: 100px;
+      -moz-border-radius: 100px;
+      -ms-border-radius: 100px;
+      border-radius: 100px;
+      margin-bottom: 1em;
+      margin-top: 3em; }
+    .side-content .profile-name {
+      color: #0c78b5;
+      font-size: 0.8em;
+      font-weight: bolder; }
+    .side-content .social-link {
+      display: inline-block;
+      color: grey;
+      margin: 0.5em 0.2em;
+      font-size: 0.7em; }
+    .side-content .side-image {
+      background-image: url(http://placekitten.com/g/200/200);
+      height: 200px;
+      width: 200px;
+      margin: 2em 0; }
+    .side-content .side-text-container {
+      text-align: left; }
+      .side-content .side-text-container .side-header {
+        font-size: 0.8em;
+        color: #0c78b5;
+        font-weight: bolder;
+        font-family: Asap;
+        line-height: 1.2em;
+        margin-bottom: 0.3em; }
+      .side-content .side-text-container p {
+        line-height: 1.5em;
+        font-size: 0.9em;
+        color: #bdc0c3; } }
 
 /*# sourceMappingURL=style.css.map */

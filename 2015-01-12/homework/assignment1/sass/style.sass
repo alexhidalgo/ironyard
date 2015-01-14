@@ -191,7 +191,10 @@ body
 		padding: 0 4em
 		display: inline-block
 
-
+		.popular-posts
+			div
+				display: inline-block
+				width: 10%
 
 
 		.profile-image
@@ -242,6 +245,48 @@ body
 		height: 1000px
 		position: relative
 		vertical-align: top
+		text-align: center
+
+		.profile-image
+			background-image: url(http://placekitten.com/g/85/85)
+			height: 85px
+			width: 85px
+			+border-radius(100px)
+			margin-bottom: 1em
+			margin-top: 3em
+
+		.profile-name
+			color: $background-color
+			font-size: 0.8em
+			font-weight: bolder
+
+		.social-link
+			display: inline-block
+			color: grey
+			margin: 0.5em 0.2em
+			font-size: 0.7em
+
+		.side-image
+			background-image: url(http://placekitten.com/g/200/200)
+			height: 200px
+			width: 200px
+			margin: 2em 0
+
+		.side-text-container
+			text-align: left
+
+			.side-header
+				font-size: 0.8em
+				color: $background-color
+				font-weight: bolder
+				font-family: Asap
+				line-height: 1.2em
+				margin-bottom: 0.3em
+
+			p
+				line-height: 1.5em
+				font-size: 0.9em
+				color: $text-content-color
 
 
 
