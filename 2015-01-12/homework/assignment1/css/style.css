@@ -146,4 +146,32 @@ body {
     margin-top: 3em;
     margin-bottom: 1em; }
 
+@media (min-width: 768px) {
+  .banner .desktop-banner {
+    display: inline-block;
+    width: 40%;
+    text-align: left; }
+    .banner .desktop-banner .wave {
+      display: inline-block;
+      margin: 0.8em 0 0 0; }
+    .banner .desktop-banner .desktop-title {
+      display: inline-block;
+      vertical-align: top;
+      margin-top: 2em;
+      margin-left: 1em; }
+  .banner .navbar {
+    text-align: right;
+    margin-right: 4em;
+    margin-top: 1.1em;
+    display: inline-block;
+    width: 40%;
+    vertical-align: top; }
+  .banner .hero {
+    font-size: 4em;
+    margin-top: 3em; }
+  .banner .subheader {
+    padding-bottom: 10em; }
+  .banner .wave {
+    display: none; } }
+
 /*# sourceMappingURL=style.css.map */
