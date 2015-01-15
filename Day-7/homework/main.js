@@ -27,25 +27,27 @@
 
 // Casino Game upon doc.ready
 
-$( document ). ready(function() {
+$(document).ready(function() {
 
-	var firstNum = Math.floor(Math.random() * (4-1) + 1);
-	var secondNum = Math.floor(Math.random() * (4-1) + 1);
-	var thirdNum = Math.floor(Math.random() * (4-1) + 1);
-	console.log(firstNum, secondNum, thirdNum);
+  while (window.confirm("Click 'OK' to play the Slot Machine.")) {
+
+    var firstNum = Math.floor(Math.random() * (4 - 1) + 1);
+    var secondNum = Math.floor(Math.random() * (4 - 1) + 1);
+    var thirdNum = Math.floor(Math.random() * (4 - 1) + 1);
+    console.log("&" + "\n" + "&" + "\n" + "&");
+
+    console.log(firstNum, secondNum, thirdNum);
 
 
-	if(firstNum === secondNum && secondNum === thirdNum) {
-		console.log("You win!");
-		window.alert(firstNum + secondNum + thirdNum + "You win!");
-	}	else {
-		console.log("You lose!");
-		window.alert(firstNum + secondNum + thirdNum + "You lose!");
-	}
-
+    if (firstNum === secondNum && secondNum === thirdNum) {
+        console.log("You win!");
+        window.alert(firstNum + secondNum + thirdNum + "You win!");
+    } else {
+        console.log("You lose!");
+        window.alert(firstNum + secondNum + thirdNum + "You lose!");
+    }
+  }
 });
-
-
 
 
 // for (i=0; i<5; i++) {
