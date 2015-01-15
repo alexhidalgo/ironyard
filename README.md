@@ -4,6 +4,10 @@ Complete IronYard directory
 
 IronYard Quick Notes
 
+Day-8 
+
+Return function breaks out of code block
+
 2015-01-13
 '==' means check equality with type coercion 
 '===' means check equality exactly no type coercion
