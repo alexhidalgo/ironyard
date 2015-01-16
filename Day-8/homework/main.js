@@ -84,34 +84,54 @@ $(document).ready(function() {
 
 	$('#playButton').on('click', function () {
 	    var $btn = $(this).button('loading');
-	    console.log('test');
+	    console.log('Play button has been clicked');
 	    // business logic...
 	    $btn.button('reset');
 
 
 
-// Random computer generated integer in a self-invoking function so it is always called at the start each time.
-var randomComputerNumber = function() {
-	return Math.floor(Math.random() * (100 - 1)+1);
-	}();
+		// Random computer generated integer in a self-invoking function so it is always called at the start each time.
+		var randomComputerNumber = function() {
+			return Math.floor(Math.random() * (100 - 1)+1);
+			}();
 
 
-// User prompt to ask for integer and store it and display in console. Var aNumber is a number not a string.
-var aNumber = Number(window.prompt("Enter a whole number between 1-100. If you guess right, you win!", ""));
-console.log("User Number is " + aNumber);
+		// User prompt to ask for integer and store it and display in console. Var aNumber is a number not a string.
+		var aNumber = Number(window.prompt("Enter a whole number between 1-100. If you guess right, you win!", ""));
+		var answer = true;  //
+		console.log("User Number is " + aNumber);
+		console.log("Computer Number is " + randomComputerNumber);
 
-// Validate number is an integer, if not then prompt user to pick again. Need to refine else statement
-if(Math.floor(aNumber) === aNumber){
-	if(aNumber === randomComputerNumber) {
-		window.alert("You win!");
-	} else if(aNumber < randomComputerNumber) {
-		window.alert("You're too low.");
-	} else if(aNumber > randomComputerNumber) {
-		window.alert("You're too high.");
-	}
-} else {
-	window.confirm("You must pick a whole number! Try again.");
-}
+
+			// Validate number is an integer, if not then prompt user to pick again. Need to refine else statement
+			if(Math.floor(aNumber) === aNumber && aNumber > 0){
+				if(aNumber === randomComputerNumber) {
+					window.alert("You win!");
+					anwser = false;
+				} else if(aNumber < randomComputerNumber) {
+					// window.alert("You're too low.");
+					aNumber = Number(window.prompt("You're too low.\nEnter a whole number between 1-100. If you guess right, you win!", ""));
+				} else if(aNumber > randomComputerNumber) {
+					// window.alert("You're too high.");
+					aNumber = Number(window.prompt("You're too high.\nEnter a whole number between 1-100. If you guess right, you win!", ""));
+				}
+			} else {
+				window.confirm("You must pick a whole number! Try again.");
+			}
+
+
+		// Validate number is an integer, if not then prompt user to pick again. Need to refine else statement
+		// if(Math.floor(aNumber) === aNumber){
+		// 	if(aNumber === randomComputerNumber) {
+		// 		window.alert("You win!");
+		// 	} else if(aNumber < randomComputerNumber) {
+		// 		window.alert("You're too low.");
+		// 	} else if(aNumber > randomComputerNumber) {
+		// 		window.alert("You're too high.");
+		// 	}
+		// } else {
+		// 	window.confirm("You must pick a whole number! Try again.");
+		// }
 
 
 	});
