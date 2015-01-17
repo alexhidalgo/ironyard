@@ -6,6 +6,13 @@ IronYard Quick Notes
 
 Day-8 
 
+Prompts produce strings not numbers.
+
+Push Pop change array permanentely. Slice does not. Slice simply copies parts of an array. Splice cuts out parts of the array permanently. 
+splice [random number] do that twice and match.join those to create a random pair of students. 
+
+Return your function values instead of console.log. Return allows you to use the value later in anotehr function.
+
 Return function breaks out of code block
 
 2015-01-13
