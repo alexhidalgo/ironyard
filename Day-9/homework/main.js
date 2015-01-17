@@ -30,44 +30,85 @@
 //Ascii 97-122 abcd..xyz
 // Any letters above 'm' should start their ascii value back at the letter 'a' so they need to be converted as a string ahead of time
 
-// Circular rosetta stone.
+// Failed program below for #2. Fails Rr => E
 
+// var myName = window.prompt('What do you want to encrypt?');
+// if(myName.charCodeAt() < 123 && myName.charCodeAt() > 96) {
+
+// 	var name = '';
+
+// 	for(var i=0; i<myName.length; i++) {
+// 		var asciiValue = myName.charCodeAt(i);
+// 		if(asciiValue > 109 && asciiValue < 123) {
+// 			asciiValue = (asciiValue + 13) -26;
+// 			name+=String.fromCharCode(asciiValue);
+// 		} else {
+// 			asciiValue += 13;
+// 			name+=String.fromCharCode(asciiValue);
+// 		}
+// 	}
+// 	console.log(name);
+// } else if(myName.charCodeAt() < 91 && myName.charCodeAt() > 64){
+
+// 	// var name = '';
+
+// 	for(var i=0; i<myName.length; i++) {
+// 		var asciiValue = myName.charCodeAt(i);
+// 		if(asciiValue > 77 && asciiValue < 91) {
+// 			asciiValue = (asciiValue + 13) -26;
+// 			name+=String.fromCharCode(asciiValue);
+// 		} else {
+// 			asciiValue += 13;
+// 			name+=String.fromCharCode(asciiValue);
+// 		}
+// 	}
+// 	console.log(name);
+
+// } else  {
+// 	window.alert("Please use the alphabet upper or lowercase.");
+// 	throw("Not within Ascii characters of the alphabet.");
+// }
+// [a-zA-Z]/
 var myName = window.prompt('What do you want to encrypt?');
-if(myName.charCodeAt() < 123 && myName.charCodeAt() > 96) {
-
+// if((myName.charCodeAt() < 123 && myName.charCodeAt() > 96) || myName.charCodeAt() < 91 && myName.charCodeAt() > 64) {
+if(/[a-zA-Z]/.test(myName)) {
 	var name = '';
 
 	for(var i=0; i<myName.length; i++) {
 		var asciiValue = myName.charCodeAt(i);
-		if(asciiValue > 109) {
+		if(asciiValue > 109 && asciiValue < 123) {
+			asciiValue = (asciiValue + 13) -26;
+			name+=String.fromCharCode(asciiValue);
+		} else if(asciiValue > 96 && asciiValue > 109) {
+			asciiValue += 13;
+			name+=String.fromCharCode(asciiValue);
+		} else if(asciiValue > 77 && asciiValue < 91) {
 			asciiValue = (asciiValue + 13) -26;
 			name+=String.fromCharCode(asciiValue);
 		} else {
 			asciiValue += 13;
 			name+=String.fromCharCode(asciiValue);
 		}
+	// var name = '';
+
+	// for(var i=0; i<myName.length; i++) {
+	// 	var asciiValue = myName.charCodeAt(i);
+	// 	if(asciiValue > 77 && asciiValue < 91) {
+	// 		asciiValue = (asciiValue + 13) -26;
+	// 		name+=String.fromCharCode(asciiValue);
+	// 	} else {
+	// 		asciiValue += 13;
+	// 		name+=String.fromCharCode(asciiValue);
+	// 	}
+	// }
+	// console.log(name);
 	}
 	console.log(name);
-} else if(myName.charCodeAt() < 91 && myName.charCodeAt() > 64){
-
-	var name = '';
-
-	for(var i=0; i<myName.length; i++) {
-		var asciiValue = myName.charCodeAt(i);
-		if(asciiValue > 77) {
-			asciiValue = (asciiValue + 13) -26;
-			name+=String.fromCharCode(asciiValue);
-		} else {
-			asciiValue += 13;
-			name+=String.fromCharCode(asciiValue);
-		}
-	}
-	console.log(name);
-
 } else  {
 	window.alert("Please use the alphabet upper or lowercase.");
 	throw("Not within Ascii characters of the alphabet.");
 }
+
 
 
 //3. Create a function that takes a ROT-13 encrypted string and returns the decrypted version of that string.
