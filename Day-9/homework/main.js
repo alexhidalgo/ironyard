@@ -177,34 +177,40 @@
 //5. Create a javascript function that takes an array of student names and returns an array of randomly selected pairs
 // of students (array of arrays).
 
-// var studentList = ["alex", "james", "rick", "gabe", "ryan", "traivs", "aaron", "erica"];
-// var pairedList = [];
-// var firstStudent = [" "];
-// var secondStudent = [" "];
-// var finalList = [];
+var studentList = ["alex", "james", "rick", "gabe", "ryan", "traivs", "aaron", "erica"];
+var pairedList = [];
+var firstStudent = [" "];
+var secondStudent = [" "];
+var finalList = [];
 
-// function getRandomInt(array) {
-//   return Math.floor(Math.random() * (array.length - 0)) + 0;
+function getRandomInt(array) {
+  return Math.floor(Math.random() * (array.length - 0)) + 0;
+}
+
+function randomPosition() {
+	return getRandomInt(studentList);
+}
+
+// function firstStudent() {
+// 	return studentList.splice(studentList[randomPosition(studentList)], 1);
+// }
+// function secondStudent() {
+// 	return studentList.splice(studentList[randomPosition(studentList)], 1);
 // }
 
-// function randomPosition() {
-// 	return getRandomInt(studentList);
-// }
 
-// // function firstStudent() {
-// // 	return studentList.splice(studentList[randomPosition(studentList)], 1);
-// // }
-// // function secondStudent() {
-// // 	return studentList.splice(studentList[randomPosition(studentList)], 1);
-// // }
+for(i=0; i < studentList.length + 7; i++) {
+		pair = [];
+		pair += studentList.splice(randomPosition(), 1);
+		pair += studentList.splice(randomPosition(), 1);
 
-// for(i=0; i < studentList.length + 2; i++) {
+		pairedList += pair;
 
-// 	pairedList += studentList.splice(randomPosition(), 1);
+//	pairedList += studentList.splice(randomPosition(), 1);
+//	pairedList += studentList.splice(randomPosition(), 1);
+	console.log(pairedList);
 
-
-// }
-
+}
 
 
 
@@ -263,3 +269,55 @@
 // };
 
 // sliceCounter(myString1, myString2);
+
+
+
+
+
+
+//9. Use $('selector').val() and $('selector').click() to re-create your number guessing game without using window.prompt.
+// Use Bootstrap to build the page.
+
+// $(document).ready(function() {
+
+//     $('#playButton').on('click', function() {
+//         var $btn = $(this).button('loading');
+//         console.log('Play button has been clicked');
+//         // business logic...
+//         $btn.button('reset');
+
+
+
+//         // Random computer generated integer in a self-invoking function so it is always called at the start each time.
+//         var randomComputerNumber = function() {
+//             return Math.floor(Math.random() * (100 - 1) + 1);
+//         }();
+
+
+//         // User prompt to ask for integer and store it and display in console. Var aNumber is a number not a string.
+//         var aNumber = Number(window.prompt("Enter a whole number between 1-100. If you guess right, you win!", ""));
+//         var answer = true; //
+//         console.log("User Number is " + aNumber);
+//         console.log("Computer Number is " + randomComputerNumber);
+
+
+//         // Validate number is an integer, if not then prompt user to pick again. Need to refine else statement
+//         if (Math.floor(aNumber) === aNumber && aNumber > 0) {
+//             if (aNumber === randomComputerNumber) {
+//                 window.alert("You win!");
+//                 anwser = false;
+//             } else if (aNumber < randomComputerNumber) {
+//                 // window.alert("You're too low.");
+//                 aNumber = Number(window.prompt("You're too low.\nEnter a whole number between 1-100. If you guess right, you win!", ""));
+//             } else if (aNumber > randomComputerNumber) {
+//                 // window.alert("You're too high.");
+//                 aNumber = Number(window.prompt("You're too high.\nEnter a whole number between 1-100. If you guess right, you win!", ""));
+//             }
+//         } else {
+//             window.confirm("You must pick a whole number! Try again.");
+//         }
+//     });
+// });
+
+
+
