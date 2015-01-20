@@ -88,7 +88,7 @@
 // 		if(asciiValue > 109 && asciiValue < 123) {
 // 			asciiValue = (asciiValue + 13) -26;
 // 			name+=String.fromCharCode(asciiValue);
-// 		} else if(asciiValue > 96 && asciiValue > 109) {
+// 		} else if(asciiValue > 96 && asciiValue < 109) {
 // 			asciiValue += 13;
 // 			name+=String.fromCharCode(asciiValue);
 // 		} else if(asciiValue > 77 && asciiValue < 91) {
@@ -140,7 +140,7 @@
 
 
 
-//4. Create a function that takes an unencrypted string and an integer (n) and returns the ROT-N version
+// 4. Create a function that takes an unencrypted string and an integer (n) and returns the ROT-N version
 
 // var myName = window.prompt('What do you want to encrypt?');
 // var rotNum = window.prompt('What ROT-N would you like to us? Enter a number.');
@@ -150,18 +150,24 @@
 
 // 	for(var i=0; i<myName.length; i++) {
 // 		var asciiValue = myName.charCodeAt(i);
-// 		if(asciiValue > 109 && asciiValue < 123) {
-// 			asciiValue = (asciiValue + parseInt(rotNum)) -26;
-// 			name+=String.fromCharCode(asciiValue);
-// 		} else if(asciiValue > 96 && asciiValue > 109) {
-// 			asciiValue += parseInt(rotNum);
-// 			name+=String.fromCharCode(asciiValue);
-// 		} else if(asciiValue > 77 && asciiValue < 91) {
-// 			asciiValue = (asciiValue + parseInt(rotNum)) -26;
-// 			name+=String.fromCharCode(asciiValue);
-// 		} else {
-// 			asciiValue += parseInt(rotNum);
-// 			name+=String.fromCharCode(asciiValue);
+// 		if(asciiValue >= 97 && asciiValue <= 122) {
+// 				asciiValue = (asciiValue - 96);
+// 				asciiValue = asciiValue + parseInt(rotNum);
+
+// 				while(asciiValue > 26) {
+// 					asciiValue = asciiValue - 26;
+// 			}
+// 				asciiValue = asciiValue + 96;
+// 				name+=String.fromCharCode(asciiValue);
+// 		} else if(asciiValue >= 65 && asciiValue <= 90) {
+// 				asciiValue = (asciiValue - 64);
+// 				asciiValue = asciiValue + parseInt(rotNum);
+
+// 				while(asciiValue > 26) {
+// 					asciiValue = asciiValue - 26;
+// 				}
+// 				asciiValue = asciiValue + 64;
+// 				name+=String.fromCharCode(asciiValue);
 // 		}
 // 	}
 // 	console.log(name);
@@ -174,43 +180,36 @@
 
 
 
+
+
+
+
+
+
 //5. Create a javascript function that takes an array of student names and returns an array of randomly selected pairs
 // of students (array of arrays).
 
-var studentList = ["alex", "james", "rick", "gabe", "ryan", "traivs", "aaron", "erica"];
-var pairedList = [];
-var firstStudent = [" "];
-var secondStudent = [" "];
-var finalList = [];
+// var studentList = ["alex", "james", "rick", "gabe", "ryan", "traivs", "aaron", "erica"];
+// var pairedList = [];
 
-function getRandomInt(array) {
-  return Math.floor(Math.random() * (array.length - 0)) + 0;
-}
 
-function randomPosition() {
-	return getRandomInt(studentList);
-}
-
-// function firstStudent() {
-// 	return studentList.splice(studentList[randomPosition(studentList)], 1);
-// }
-// function secondStudent() {
-// 	return studentList.splice(studentList[randomPosition(studentList)], 1);
+// function getRandomInt(array) {
+//   return Math.floor(Math.random() * (array.length - 0)) + 0;
 // }
 
+// function randomPosition() {
+// 	return getRandomInt(studentList);
+// }
 
-for(i=0; i < studentList.length + 7; i++) {
-		pair = [];
-		pair += studentList.splice(randomPosition(), 1);
-		pair += studentList.splice(randomPosition(), 1);
+// for(i=0; i < studentList.length; i+2) {
+// 		pair = [];
+// 		pair += studentList.splice(randomPosition(), 1) + " ";
+// 		pair += studentList.splice(randomPosition(), 1);
 
-		pairedList += pair;
+// 		pairedList.push(pair);
+// }
 
-//	pairedList += studentList.splice(randomPosition(), 1);
-//	pairedList += studentList.splice(randomPosition(), 1);
-	console.log(pairedList);
-
-}
+// console.log(pairedList);
 
 
 
@@ -218,14 +217,14 @@ for(i=0; i < studentList.length + 7; i++) {
 // 6. Create a function that takes a string and returns a string with a dash (-) in between each character
 // using .split and .join.
 
-// var myString = "alex";
 
-// function splitJoin(string) {
-// 	console.log(string.split('').join('-'));
 
-// }
+var splitJoin = function(string) {
+	return string.split('').join('-');
 
-// splitJoin(myString);
+};
+
+
 
 
 
@@ -279,6 +278,13 @@ for(i=0; i < studentList.length + 7; i++) {
 // Use Bootstrap to build the page.
 
 // $(document).ready(function() {
+
+// 	$( "#numBox" )
+//   .inputNum(function() {
+//     value = $( this ).val();
+//   })
+//   .inputNum();
+//   console.log(value);
 
 //     $('#playButton').on('click', function() {
 //         var $btn = $(this).button('loading');

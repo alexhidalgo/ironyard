@@ -6,7 +6,10 @@ IronYard Quick Notes
 
 Day-8 
 
+Read mike monteiro's you're my favorite client.
 Prompts produce strings not numbers.
+
+Shift and unshift change array permanently at the start of an array.
 
 Push Pop change array permanentely. Slice does not. Slice simply copies parts of an array. Splice cuts out parts of the array permanently. 
 splice [random number] do that twice and match.join those to create a random pair of students. 
