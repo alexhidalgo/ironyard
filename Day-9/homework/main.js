@@ -1,3 +1,4 @@
+"use scrict";
 // Remember to handle errors and validate functions
 // 1. Create a function that takes an array of values and returns one randonly selected value from that array.
 // find the length of the arry. select a random position in that array and return it.
@@ -222,7 +223,6 @@
 var splitJoin = function(string) {
 	return string.split('').join('-');
 };
-
 
 
 

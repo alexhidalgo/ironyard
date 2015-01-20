@@ -4,6 +4,13 @@ Complete IronYard directory
 
 IronYard Quick Notes
 
+Day-10
+create repo
+cd to dir
+yo gulp-webapp
+
+If we want something to gurantee it is in the correct order we will use an ARRAY otherwise we will use a OBJECT.
+
 Day-8 
 
 Read mike monteiro's you're my favorite client.
