@@ -221,7 +221,6 @@
 
 var splitJoin = function(string) {
 	return string.split('').join('-');
-
 };
 
 
