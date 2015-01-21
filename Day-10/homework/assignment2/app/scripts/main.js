@@ -9,8 +9,10 @@ $( document ).ready(function() {
 	// });
 
 	$('#arrow-up').click(function(){
-    $("html, .nav-pills").animate({ scrollTop: 0 }, 600);
-    return false;
+		// $('*').scrollTop(0, 500);
+    // $("html, .nav-pills").animate({ scrollTop: 0 }, 600);
+    // return false;
+    $("html, body").animate({ scrollTop: 0});
 });
 
 });
