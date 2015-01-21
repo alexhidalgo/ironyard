@@ -15,11 +15,18 @@ function getClockTime()
 
 
     document.getElementById('clock').innerHTML = timeString;
+    // document.body.style.transform: rotate(30deg);
 
 
+    var elemHour = document.getElementById('hour-box');
+    elemHour.style.transform = 'rotate(' + hour + 'deg)';
 
-    // var elem = document.getElementById('hour-box');
-    // elem.style.height = seconds + 'px';
+    var elemMinute = document.getElementById('minute-box');
+    elemMinute.style.transform = 'rotate(' + minute + 'deg)';
+
+    var elemSecond = document.getElementById('second-box');
+    elemSecond.style.transform = 'rotate(' + seconds + 2 + 'deg)';
+
 }
 
 getClockTime();
@@ -51,4 +58,4 @@ function animateBg() {
 animateBg();
 setInterval(animateBg, 250);
 
-//JavaScript syntax: object.style.height="500px"
+

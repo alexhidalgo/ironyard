@@ -5,6 +5,7 @@ html {
 
 body {
 	text-align: center;
+	height: 1000px;
 
 }
 
@@ -18,4 +19,27 @@ body {
 	width: 10px;
 	background-color: black;
 	display: inline-block;
+	transform-origin: bottom;
+	position: relative;
+	left: 110px;
+
+}
+
+#minute-box {
+	height: 200px;
+	width: 10px;
+	background-color: black;
+	display: inline-block;
+	transform-origin: bottom;
+	position: relative;
+	left: 55px;
+}
+
+#second-box {
+	height: 200px;
+	width: 10px;
+	background-color: black;
+	display: inline-block;
+	transform-origin: bottom;
+	position: relative;
 }
