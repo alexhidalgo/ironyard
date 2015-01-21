@@ -1,0 +1,21 @@
+html {
+    font-family: "Digital";
+    font-size: 130px;
+}
+
+body {
+	text-align: center;
+
+}
+
+#clock {
+    color: red;
+    padding-top: 25%;
+}
+
+#hour-box {
+	height: 200px;
+	width: 10px;
+	background-color: black;
+	display: inline-block;
+}
