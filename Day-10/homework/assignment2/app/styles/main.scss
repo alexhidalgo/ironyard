@@ -9,6 +9,13 @@ $icon-font-path: '../bower_components/bootstrap-sass-official/assets/fonts/boots
 @import url(http://fonts.googleapis.com/css?family=Lato:400,700,900,700italic,900italic);
 @import url(http://fonts.googleapis.com/css?family=Open+Sans+Condensed:300,700);
 
+@mixin border-radius($radius) {
+  -webkit-border-radius: $radius;
+     -moz-border-radius: $radius;
+      -ms-border-radius: $radius;
+          border-radius: $radius;
+}
+
 .browsehappy {
   margin: 0.2em 0;
   background: #ccc;
@@ -81,7 +88,7 @@ body {
       }
 
       .nav-pills > li:last-child {
-        padding: 0.4em 1.3em 0.5em 1.3em;
+        padding: 0.4em 1em 0.5em 0em;
       }
 
       .nav-pills > li {
@@ -89,6 +96,7 @@ body {
         display: inline-block;
         border: $greyBorder solid 1px;
         margin: 0;
+        width: 25%;
 
         a {
           color: black;
@@ -133,6 +141,28 @@ body {
           padding-left: 0.5em;
           padding-right: 0.5em;
           padding-bottom: 1em;
+        }
+      }
+
+      .cardBg {
+        @include border-radius(10px);
+        -webkit-box-shadow: 1px 2px 5px 4px rgba(56,56,56,1);
+        -moz-box-shadow: 1px 2px 5px 4px rgba(56,56,56,1);
+        box-shadow: 1px 2px 5px 4px rgba(56,56,56,1);
+        margin: 1em;
+
+        .cardTop {
+          background-color: $greyBorder;
+          text-align: center;
+
+          img {
+            width: 100%;
+          }
+
+        }
+
+        .cardBottom {
+
         }
       }
     }

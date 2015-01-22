@@ -13,7 +13,7 @@ function onReady() {
 		if(e.keyCode == 39) {
 			leftCounter++;
 			$('#movingBox').css('left', leftCounter);
-			console.log('39 rightCounter left, leftCounter');
+			console.log(e.keyCode);
 		}
 
 		if(e.keyCode == 40) {
@@ -24,7 +24,7 @@ function onReady() {
 		if(e.keyCode == 37) {
 			leftCounter--;
 			$('#movingBox').css('left', leftCounter);
-			console.log('37 leftCounter-- left, leftCounter');
+
 		}
 
 		if(e.keyCode == 38) {
