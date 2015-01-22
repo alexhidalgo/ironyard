@@ -34,4 +34,9 @@ function onReady() {
 
 	});
 
+	var clickCounter = topCounter;
+	$('#movingBox').click(function(e){
+		$('#movingBox').css('top', clickCounter);
+	});
+
 }
