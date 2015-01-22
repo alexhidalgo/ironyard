@@ -1,39 +1,37 @@
 $(document).ready(onReady);
 function onReady() {
-	//Build moving box function that depends on arrow keys for positioning.
 
-	//Create a div
+	var box = document.getElementById('movingBox');
+	console.log(box);
 
-	//create a event.keydown function for the div
-	// $('#movBox').keydown(function(e){
-	// 	$('#movBox')
-	// });
+	var rightCounter = 0;
+	var topCounter = 0;
+	var leftCounter = 0;
+	var bottomCounter = 0;
 
-	$(window).keyup(onKeyUp);
-	function onKeyUp(e) {
-		if(e.which === 27) {
-			$('#movBox').css('padding-left', '10px');
+	$(document).keydown(function upArrow(e){
+		if(e.keyCode == 39) {
+			leftCounter++;
+			$('#movingBox').css('left', leftCounter);
+			console.log('39 rightCounter left, leftCounter');
 		}
-	}
-	// console.log(e.which);
-	// console.log($(window).width());
-	// }
 
-// 	var vanillaSelector = document.getElementById('movBox');
-// 	vanillaSelector.addEventListener('click', onDivArrow);
+		if(e.keyCode == 40) {
+			topCounter++;
+			$('#movingBox').css('top', topCounter);
+		}
 
-// 	function onDivArrow() {
-// 	console.log('the box was clicked');
+		if(e.keyCode == 37) {
+			leftCounter--;
+			$('#movingBox').css('left', leftCounter);
+			console.log('37 leftCounter-- left, leftCounter');
+		}
 
-// }
+		if(e.keyCode == 38) {
+			topCounter--;
+			$('#movingBox').css('top', topCounter);
+		}
 
-// 	$('#movBox').keydown(onDivArrow);
-
-	// $("#movBox").keyup(function(){
-	// 	$("movBox").css("padding-left", "10px");
-	// });
-
-	// var movDiv = document.getElementById('movBox');
-	// movDiv.addEventListener('keyup');
+	});
 
 }
