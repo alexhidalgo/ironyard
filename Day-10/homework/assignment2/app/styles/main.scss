@@ -1,9 +1,13 @@
 $icon-font-path: '../bower_components/bootstrap-sass-official/assets/fonts/bootstrap/';
+@import "color";
 
 // bower:scss
 @import "../../bower_components/bootstrap-sass-official/assets/stylesheets/_bootstrap.scss";
 // endbower
-
+//fonts
+@import url(http://fonts.googleapis.com/css?family=Pacifico);
+@import url(http://fonts.googleapis.com/css?family=Lato:400,700,900,700italic,900italic);
+@import url(http://fonts.googleapis.com/css?family=Open+Sans+Condensed:300,700);
 
 .browsehappy {
   margin: 0.2em 0;
@@ -12,27 +16,125 @@ $icon-font-path: '../bower_components/bootstrap-sass-official/assets/fonts/boots
   padding: 0.2em 0;
 }
 
+h1 {
+  font-family: Open Sans Condensed;
+  font-weight: 700;
+  font-size: 2.2em;
+  margin: 0;
+}
+
 /* Space out content a bit */
 body {
-
+  font-family: Lato;
 
   .container {
     padding: 0;
+    text-align: center;
+    background-color: whitesmoke;
+
+    .line {
+      width: 4em;
+      height: 0.4em;
+      background-color: $darkGrey;
+      display: inline-block;
+    }
+
+    .lineLight {
+      height: 0.05em;
+      width: 100%;
+      background-color: $greyBorder;
+    }
 
 
     .title-solid {
     background-color: #333333;
     color: white;
+    font-family: Pacifico;
+    font-size: 1.4em;
+    padding: 0.5em 1.1em;
     }
 
     .nav-header {
       text-align: center;
 
+    .icon-box {
+      width: 2em;
+      height: 2em;
+      background-color: $darkGrey;
+      display: inline-block;
+
+
+
+      img {
+        width: 90%;
+        padding-top: 0.1em;
+        margin-bottom: 0.3em;
+      }
+    }
+      .nav > li > a {
+        padding-left: 1.6em;
+        padding-right: 1.5em;
+      }
+
+      .nav-pills > li.active > a {
+        background-color: $lightGreyBox;
+      }
+
+      .nav-pills > li:last-child {
+        padding: 0.4em 1.3em 0.5em 1.3em;
+      }
+
       .nav-pills > li {
         float: none;
         display: inline-block;
+        border: $greyBorder solid 1px;
+        margin: 0;
+
+        a {
+          color: black;
+          font-weight: 900;
+          font-size: 1em !important;
+        }
+      }
+    }
+
+    .top-image {
+      padding: 2em;
+
+      img {
+        max-width: 100%;
+
+      }
+    }
+
+    .header-text {
+      color: $darkGrey;
+      padding: 0 2em;
+
+      h2 {
+        font-size: 1.5em;
       }
 
+      p {
+        padding-bottom: 1.4em;
+      }
+    }
+
+    .content {
+      background-color: $contentBg;
+      border-top: 3.5px solid $cardBg;
+      padding-top: 1.5em;
+
+
+      .secondNav {
+        div {
+          display: inline-block;
+          padding-top: 4em;
+          padding-left: 0.5em;
+          padding-right: 0.5em;
+          padding-bottom: 1em;
+        }
+      }
     }
   }
 }
