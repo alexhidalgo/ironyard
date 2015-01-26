@@ -1,0 +1,355 @@
+html {
+	font-family:Oswald;
+}
+
+.header {
+	background-color: rgb(5,117,183);
+	text-align:center;
+	padding-top:0.5em;
+	padding-bottom: 1em;
+	margin-bottom: 2.75em;
+	border-bottom: 1px solid rgb(143,161,173);
+
+	img {
+		padding-top: 0.8em;
+		padding-bottom: 0.6em;
+		margin: 0 auto;
+		display:block;
+	}
+
+	h1 {
+		margin: 0 auto;
+		}
+
+	img {
+		display:block;
+		margin: 0 auto;
+	}
+
+	.navbar > div {
+		display:inline-block;
+		text-align:center;
+	}
+
+	.title {
+		padding-bottom: 0.625em;
+		color:white;
+		font-weight:500;
+		font-size:2em;
+	}
+
+	.blog-subtitle {
+		visibility: hidden;
+	}
+}
+
+.blog-content {
+	margin: 0 1.125em;
+	color:grey;
+
+	h1 {
+		text-align:left;
+		margin-bottom: 0.8em;
+		color:#002C5C;
+		font-weight:300;
+		font-size: 3em;
+		width:5em;
+	}
+
+	span {
+		text-decoration: underline;
+		color:grey;
+	}
+
+	p {
+		margin-top: 1.4em;
+	}
+
+	#para1 {
+		margin-top:0;
+	}
+
+	#pull-quote {
+		border-left: 0.2em solid grey;
+		line-height: 1.5em;
+		padding-bottom: 1.75em;
+		color:#3889E0;
+	}
+
+	#box {
+		background-color:rgb(3,53,79);
+	}
+
+	.box-button {
+		width:2em;
+		background-color: rgb(94,106,111);
+		display:inline-block;
+		text-align: center;
+		padding:0.7em 0.2em;
+		color:white;
+		margin-top:1em;
+	}
+
+}
+
+.social {
+
+	margin: 0 1.125em;
+	margin-top: 0.625em;
+	border-bottom: 1px solid rgb(143,161,173);
+	padding-bottom: 3.3em;
+
+	
+
+	.social-image {
+		margin-top: 4.75em;
+		text-align:center;
+
+		div {
+			display:inline-block;
+			color:grey;
+			font-size:1.4em;
+		}
+
+		h1 {
+			padding-top: 0.875em;
+			padding-bottom: 0.8em;
+		}
+
+		#middle {
+			margin: 0 1em;
+		}
+
+		h1 {
+			color:#3889E0;
+		}
+
+	}
+
+	.ad-box {
+		text-align: right;
+
+		p {
+			padding-top:1em;
+			text-decoration: underline;
+			color:rgb(143,161,173);
+		}
+
+	}
+
+	.ad {
+		margin-top: 4.1em;
+		width:100%;
+
+	}
+
+}
+
+.popular-posts {
+	margin: 0 1.125em;
+	margin-top:3.62em;
+	
+
+
+
+	.image1 {
+		background-image: url(http://placekitten.com/277/200);
+		height: 12.5em;
+		background-size:100%;
+	}
+
+	.image2 {
+		background-image: url(http://placekitten.com/277/200);
+		height: 12.5em;
+		margin: 1em 0;
+		background-size:100%;
+	}
+
+	.image3 {
+		background-image: url(http://placekitten.com/277/200);
+		height: 12.5em;
+		background-size:100%;
+	}
+
+	.image4 {
+		visibility: hidden;
+		background-image: url(http://placekitten.com/277/200);
+		height: 12.5em;
+		background-size:100%;
+		display:none;
+
+	}
+
+
+	h1 {
+		margin-bottom: 1.5em;
+		color: rgb(4,53,80);
+		font-size:2em;
+		font-weight: 700;
+	}
+
+	p {
+		padding-top: 9.2em;
+		padding-left: 1em;
+		color:white;
+		font-weight: 300;
+		font-size: 1.2em;
+
+	}
+
+
+
+}
+
+.footer {
+	background-color:rgb(3, 53, 79);
+	margin-top: 72px;
+	padding-top: 2.313em;
+	text-align:center;
+	color:rgb(143,161,173);
+
+	li {
+		display:inline-block;
+	}
+
+	.IY-logo {
+		margin-top: 2.15em;
+		margin-bottom: 0.625em;
+	}
+
+	h1 {
+		line-height: 1.4em;
+	}
+}
+
+/* CSS for medium devices ≥768px */
+@media (min-width: 768px) {
+
+	.header {
+
+
+		.navbar {
+			padding-right:10.3em;
+			float:right;
+
+			.search {
+				margin-left: 1em;
+				margin-right: 0.1em;
+			}
+
+
+		}
+
+		.logo {
+			float:left;
+			padding-left:8.8em;
+			display:inline-block;
+
+			img {
+				padding-top: 0;
+				display:inline-block;
+
+			}
+
+		}
+
+		.title {
+			padding-top: 2em;
+			padding-bottom: 0.1em;
+			font-size: 5em;
+			letter-spacing: 0.2em;
+		}
+
+		.subtitle {
+			font-weight:100;
+			padding-bottom: 12em;
+		}
+
+		.blog-subtitle {
+			visibility: visible;
+		}
+	}
+
+	.blog-content {
+
+		margin:0 auto;
+		padding-top:0.5em;
+		/*margin-left: 9.8em;*/
+		float:left;
+		max-width: 40em;
+		width:75%;
+
+		h1 {
+			width: auto;
+			max-width: 40em;
+			font-weight:900;
+			letter-spacing: 0.1em;
+		}
+
+		.box-button {
+			margin-bottom:3em;
+		}
+	}
+
+	.social {
+		float:right;
+		margin:0 auto;
+		border-bottom:none;
+		width:25%;
+	}
+
+	.popular-posts {
+		clear:both;
+		text-align: center;
+		padding-top:2em;
+		margin:0 auto;
+		border-top: 1px solid grey;
+
+		h1 {
+			font-size: 4em;
+		}
+
+		div {
+			display:inline-block;
+			width:25%;
+			font-size: 0;
+			text-align: left;
+		}
+
+		.image-wrapper {
+			width:100%;
+		}
+
+		.image4 {
+			font-size: 16px;
+			display:inline-block;
+			visibility: visible;
+		}
+
+		.image1 {
+			font-size: 16px;
+		}
+
+		.image2 {
+			font-size: 16px;
+			margin:0 auto;
+		}
+
+		.image3 {
+			font-size: 16px;
+		}
+	}
+
+	.footer {
+		clear:both;
+		margin:0 auto;
+
+	}
+
+	.blog-social-wrapper {
+		padding-left:9.8em;
+		padding-right:10em;
+	}
+
+
+}
