@@ -1,0 +1,183 @@
+html {
+	font-size: 100%;
+}
+
+body {
+	color: #777;
+	font-family: sans-serif;
+	margin: 0;
+}
+
+div {
+}
+
+h2 {
+	font-size: 1.5em;
+	margin: .83em 0;
+}
+
+li {
+		display: list-item;
+	}
+
+.layout {
+}
+
+#menu-link {
+	position: fixed;
+	display: block;
+	top: 0;
+	left: 0;
+	background: #000;
+	background: rgba(0,0,0,0.7);
+	font-size: 20px;
+	z-index: 1;
+	height: auto;
+	padding: 0.5em 0.9em;
+	color: white;
+	text-align: center;
+}
+
+#menu-link:active {
+}
+
+.hero {
+	padding: 2.5em 2em 0;
+	border-bottom: 1px solid #eee;
+	color: #333;
+	text-align: center;
+	margin: 0;
+}
+
+.hero h1 {
+	margin: 0.2em 0;
+	font-size: 3em;
+	font-weight: 300;
+}
+
+.hero h2 {
+	font-weight: 300;
+	color: #ccc;
+	padding: 0;
+	margin-top: 0;
+
+}
+
+.content {
+	padding: 0 30px;
+	margin-bottom: 50px;
+	line-height: 527.5px;
+	display: block;
+	line-height: 1.6em;
+}
+
+.content-subhead {
+	margin: 50px 0 20px 0;
+	font-weight: 300;
+	color: #888;
+}
+
+.image-container {
+}
+
+.image-box {
+	width: 24%;
+	display: inline-block;
+}
+
+.image-pure {
+	max-width: 100%;
+	height: auto;
+}
+
+#menu {
+		left: 0;
+		width: 150px;
+		position: fixed;
+		top: 0;
+		bottom: 0;
+		z-index: 1000;
+		background: #191818;
+		overflow-y: auto;
+		margin-left: -150px;
+	}
+
+/* CSS for large devices >= 720px */
+@media (min-width: 720px) {
+
+	.layout {
+		padding-left: 150px;
+		left:0;
+		-webkit-transition-duration: 0.3s;
+		-webkit-transition-timing-function: ease-in-out;
+	}
+
+	#menu-link {
+		display: none;
+	}
+
+
+
+	#menu {
+		position: fixed;
+		left: 150px;
+		-webkit-transition-duration: 0.3s;
+		-webkit-transition-timing-function: ease-in-out;
+	}
+
+	.menu-pure {
+		visibility: visible;
+		z-index: 2;
+		width: 100%;
+	}
+
+	.menu-pure-heading {
+		background: #1f8dd6;
+		font-size: 110%;
+		color: #fff;
+		margin: 0;
+		display: block;
+
+	}
+
+	#menu li a {
+		border: none;
+		padding: 0.6em 0 0.6em 0.6em;
+		text-decoration: none;
+		line-height: 1.5em;
+		display: block;
+		color: #999;
+	}
+
+	#menu a {
+		border: none;
+		padding: 0.6em 0 0.6em 0.6em;
+		text-decoration: none;
+		line-height: 1.5em;
+		display: block;
+		color: #fff;
+	}
+
+	#menu ul {
+		padding: 0;
+		display: block;
+	}
+
+	#menu a:visited {
+		background: #1f8dd6;
+		width: 100%;
+		display: block;
+	}
+
+	#menu a:hover {
+		background: grey;
+		width: 100%;
+		display: block;
+	}
+
+	#menu a:active {
+		background: blue;
+		width: 100%;
+		display: block;
+	}
+}

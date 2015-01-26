@@ -1,0 +1,21 @@
+div {
+background-color: #05B8CC;
+color: white;
+display: block;
+width: 24%;
+height: 400px;
+margin: 10px 0;
+text-align: center;
+line-height: 30px;
+border-radius: 5px;
+font-family: courier;
+}
+
+.four {
+position: fixed;
+top: 80px;
+left: 20px;
+background-color: green;
+height: 50px;
+padding-bottom: 15px;
+}
