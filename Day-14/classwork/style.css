@@ -1,13 +1,23 @@
 .result-contain {
 	text-align: center;
 }
+
 table {
-	margin: 0 auto;
+	text-align: left;
 }
 
-body {
+#watch-list {
+	display: inline-block;
+	width: 45%;
+	height: 200px;
+	background-color: yellow;
+
 }
 
-td {
-
+#table-data {
+	display: inline-block;
+	width: 50%;
+	height: 200px;
+	background-color: green;
 }
+

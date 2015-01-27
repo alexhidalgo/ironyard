@@ -1,7 +1,7 @@
 $(document).ready(onReady);
 
 function onReady() {
-	// // 1. Event listener
+	// 1. Event listener
 	// $('#search-button').on('click', onSearchButtonClick);
 
 	// function onSearchButtonClick() {
@@ -37,52 +37,32 @@ function onReady() {
 		);
 	}
 
-	function tomatoMeter(x) {
+	// function tomatoMeter(x) {
 
-		$.get(
-			'http://www.omdbapi.com',
-			{
-				i: x,
-				tomatoes: true
-			},
-			onTomatoResults,
-			'json'
-		);
-	}
+	// 	$.get(
+	// 		'http://www.omdbapi.com',
+	// 		{
+	// 			i: x,
+	// 			tomatoes: true
+	// 		},
+	// 		onTomatoResults,
+	// 		'json'
+	// 	);
+	// }
 
 	function onSearchResults(data) {
 
 		console.log(data);
 		console.log(data.Search[0].imdbID);
-		// $('#title').html(data.Search[0].Title);
-		// $('#year').html(data.Search[0].Year);
-		// $('#title1').html(data.Search[1].Title);
-		// $('#year1').html(data.Search[1].Year);
-		// $('#title2').html(data.Search[2].Title);
-		// $('#year2').html(data.Search[2].Year);
-		// $('#title3').html(data.Search[3].Title);
-		// $('#year3').html(data.Search[3].Year);
-		// $('#title4').html(data.Search[4].Title);
-		// $('#year4').html(data.Search[4].Year);
-		// $('#title5').html(data.Search[5].Title);
-		// $('#year5').html(data.Search[5].Year);
-		// $('#title6').html(data.Search[6].Title);
-		// $('#year6').html(data.Search[6].Year);
-		// $('#title7').html(data.Search[7].Title);
-		// $('#year7').html(data.Search[7].Year);
-		// $('#title8').html(data.Search[8].Title);
-		// $('#year8').html(data.Search[8].Year);
-		// $('#title9').html(data.Search[9].Title);
-		// $('#year9').html(data.Search[9].Year);
-		// tomatoMeter(data.Search[0].imdbID);
-		counter = 0;
-		for (var i in data) {
 
-			$('table-data').append("<th>" + data.Search[counter].Title + "</th>");
-			counter = i++;
+		i = 0;
+		for (var i = 0; i < 10; i++) {
+
+			$('#table-data').append("<li>" + data.Search[i].Title + "</li>" + "<li>" + data.Search[i].Year + "</li>");
+
 		}
 	}
-
+// "<th>" + data.Search[counter].Title + "</th>"
 	// function onTomatoResults(data) {
 	// 	console.log('onTomatoResults');
 	// 	console.log(data);
@@ -103,4 +83,22 @@ function onReady() {
 		imdbSearch(searchTerm);
 	}
 
+	//Hard Mode: Update your results box to allow your user to click on a result to
+	//add it to another list of movies that they want to watch (their "to watch" list).
+	// var movieId = document.getElementById('movie');
+
+	// $('#movie').click(function(){
+	// 	// table-data.innerHTML = table-data.innerHTML + this.innerHTML;
+	// 	$('#watch-list').innerHTML = $('#watch-list').innerHTML + $(this.innerHTML);
+	// 	console.log('you clicked me');
+	// });
+
+	$('li').on('click', onTdClick);
+
+	function onTdClick() {
+		// $(this).appendTo($('#watch-list'));
+		console.log('you clicked me');
+	}
+
 }
+
