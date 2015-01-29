@@ -58,8 +58,13 @@ function onReady() {
 		i = 0;
 		for (var i = 0; i < 10; i++) {
 
-			$('#table-data').append("<li>" + data.Search[i].Title + "</li>" + "<li>" + data.Search[i].Year + "</li>");
+			$('#table-data').append("<tr class=\"movie\"><td>" + data.Search[i].Title + "</td>" + "<td>" + data.Search[i].Year + "</td></tr>");
+		}
+		$('tr').on('click', onTdClick);
 
+		function onTdClick() {
+			// $(this).appendTo($('#watch-list'));
+			console.log('you clicked me');
 		}
 	}
 // "<th>" + data.Search[counter].Title + "</th>"
@@ -93,12 +98,12 @@ function onReady() {
 	// 	console.log('you clicked me');
 	// });
 
-	$('li').on('click', onTdClick);
+	// $('tr').on('click', onTdClick);
 
-	function onTdClick() {
-		// $(this).appendTo($('#watch-list'));
-		console.log('you clicked me');
-	}
+	// function onTdClick() {
+	// 	// $(this).appendTo($('#watch-list'));
+	// 	console.log('you clicked me');
+	// }
 
 }
 
