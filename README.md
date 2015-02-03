@@ -4,6 +4,14 @@ Complete IronYard directory
 
 IronYard Quick Notes
 
+Day-16
+parseInt turns numbers in strings into real numbers and ignores letters.
+Reads left to right thus if the string starts with a letter it will return a NaN
+Math.random is not a function it is a number. it returns a random number.
+Math is an object. we know this because Math.random has a dot after it. only objects have dots after them.
+ 
+=== checks both type and value while == checks only value
+
 Day-14
 
 We want our functions to be self-contained in case they move. We can include the variables, objects they reference inside of 
